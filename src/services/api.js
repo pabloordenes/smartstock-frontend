@@ -5,5 +5,6 @@ const API = axios.create({
 });
 
 export const getProducts = () => API.get("/products");
+export const deleteProduct = (id) => API.delete(`/products/${id}`);
 
 export default API;
